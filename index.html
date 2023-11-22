@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ascendix CO page</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.16.105/build/pdf.min.js"></script>
+    <!-- Bootstrap CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css"
+      crossorigin="anonymous"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/pdfjs-dist@4.0.189/web/pdf_viewer.min.css"
+    /> -->
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <main class="main">
+      <!-- LIBRARY SECTION -->
+
+      
+          <!-- First row, visible for mobile -->
+
+          <div class="row">
+            <div class="col-lg-3 col-sm-6">
+              <!-- First Card -->
+              <article class="library__card">
+                <button
+                  type="button"
+                  class="library__btn"
+                  data-toggle="modal"
+                  data-target="#modalOne"
+                >
+                  <div class="library__inner">
+                    <img
+                      src="https://staging.ascendix.com/wp-content/uploads/2023/06/cover-Offering-Memorandum.jpg"
+                      loading="lazy"
+                      alt="Ascendix Composer Online Property Flyer 1"
+                      class="library__img"
+                    />
+                    <div class="library__content">
+                      <h3 class="library__subtitle">Property Flyer 1</h3>
+                      <div class="library__type">
+                        <span class="library__name">PDF</span>
+                      </div>
+                    </div>
+                  </div>
+                </button>
+              </article>
+
+              <!-- First Modal (PRINTABLE) -->
+              <div
+                class="modal fade"
+                id="modalOne"
+                tabindex="-1"
+                aria-labelledby="firstTemplate"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <span class="modal-title" id="firstTemplate"
+                        >Preview Template &quot;Property Flyer 1&quot;</span
+                      >
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <!-- <iframe
+                        class="safari-iframe"
+                        src="https://ascendix.com/wp-content/uploads/2023/08/Offering-Memorandum-For-Sale.pdf#toolbar=0&navpanes=0&view=Fit"
+                        frameborder="0"
+                        scrolling="yes"
+                        allowfullscreen
+                        title="Property flyer"
+                      ></iframe> -->
+                        <div id="pdfViewerDiv"></div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- First Modal End -->
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+              <!-- Second Card -->
+              <article class="library__card">
+                <button
+                  type="button"
+                  class="library__btn"
+                  data-toggle="modal"
+                  data-target="#modalTwo"
+                >
+                  <div class="library__inner">
+                    <img
+                      src="https://staging.ascendix.com/wp-content/uploads/2023/06/cover-Listing-Activity-Report.jpg"
+                      loading="lazy"
+                      alt="Ascendix Composer Online Property Flyer 2"
+                      class="library__img"
+                    />
+                    <div class="library__content">
+                      <h3 class="library__subtitle">Property Flyer 2</h3>
+                      <div class="library__type">
+                        <span class="library__name">Microsite/HTML</span>
+                      </div>
+                    </div>
+                  </div>
+                </button>
+              </article>
+
+              <!-- Second Modal (PRINTABLE) -->
+              <div
+                class="modal fade"
+                id="modalTwo"
+                tabindex="-1"
+                aria-labelledby="secondTemplate"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <span class="modal-title" id="secondTemplate"
+                        >Preview Template &quot;Property Flyer 2&quot;</span
+                      >
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <iframe
+                        id="pdf-js-viewer"
+                        src="https://ascendix.com/wp-content/uploads/2023/06/Listing-Activity-Report.pdf#toolbar=0&navpanes=0&view=Fit"
+                        width="100%"
+                        height="100%"
+                        frameborder="0"
+                        scrolling="yes"
+                        title="Lease Offering Memorandum 1_9_6_23 (1).pdf"
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Second Modal End -->
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+              <!-- Third Card -->
+              <article class="library__card">
+                <button
+                  type="button"
+                  class="library__btn"
+                  data-toggle="modal"
+                  data-target="#modalThird"
+                >
+                  <div class="library__inner">
+                    <img
+                      src="https://staging.ascendix.com/wp-content/uploads/2023/06/cover-Listing-Activity-Report.jpg"
+                      loading="lazy"
+                      alt="Ascendix Composer Online Property Flyer 3"
+                      class="library__img"
+                    />
+                    <div class="library__content">
+                      <h3 class="library__subtitle">Property Flyer 3</h3>
+                      <div class="library__type">
+                        <span class="library__name">Email</span>
+                      </div>
+                    </div>
+                  </div>
+                </button>
+              </article>
+
+              <!-- Third Modal (PRINTABLE) -->
+              <div
+                class="modal fade"
+                id="modalThird"
+                tabindex="-1"
+                aria-labelledby="thirdTemplate"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <span class="modal-title" id="thirdTemplate"
+                        >Preview Template &quot;Property Flyer 3&quot;</span
+                      >
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <iframe
+                        src="https://ascendix.com/wp-content/uploads/2023/06/Lease-Comp-Report-short-version.pdf#toolbar=0&navpanes=0"
+                        width="100%"
+                        height="100%"
+                        frameborder="0"
+                        scrolling="no"
+                        allowfullscreen
+                        title="Legacy Data Snapshot Sample(done).pdf"
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Third Modal End -->
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+              <!-- Fourth Card -->
+              <article class="library__card">
+                <button
+                  type="button"
+                  class="library__btn"
+                  data-toggle="modal"
+                  data-target="#modalFourth"
+                >
+                  <div class="library__inner">
+                    <img
+                      src="https://staging.ascendix.com/wp-content/uploads/2023/06/cover-Listing-Activity-Report.jpg"
+                      loading="lazy"
+                      alt="Ascendix Composer Online Property Microsite"
+                      class="library__img"
+                    />
+                    <div class="library__content">
+                      <h3 class="library__subtitle">Property Microsite</h3>
+                      <div class="library__type">
+                        <span class="library__name">Microsite/HTML</span>
+                      </div>
+                    </div>
+                  </div>
+                </button>
+              </article>
+
+              <!-- Fourth Modal (MICROSITE) -->
+              <div
+                class="modal fade img-screen"
+                id="modalFourth"
+                tabindex="-1"
+                aria-labelledby="fourthTemplate"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <span class="modal-title" id="fourthTemplate"
+                        >Preview Template &quot;Property Microsite&quot;</span
+                      >
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <iframe
+                        src="https://ascendix.com/wp-content/uploads/2023/06/Sale-Comp-Report-extended-version.pdf#toolbar=0&navpanes=0"
+                        width="100%"
+                        height="100%"
+                        frameborder="0"
+                        scrolling="no"
+                        allowfullscreen
+                        title="Property Listing Report  (OK 3)_10_21_21 (11).pdf"
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Fourth Modal End -->
+            </div>
+          </div>
+
+          <!-- Second row -->
+          <div class="row library-hide-row" id="hide-cards-first-row">
+            <div class="col-lg-3 col-sm-6">
+              <!-- Fifth Card -->
+              <article class="library__card">
+                <button
+                  type="button"
+                  class="library__btn"
+                  data-toggle="modal"
+                  data-target="#modalFive"
+                >
+                  <div class="library__inner">
+                    <img
+                      src="https://staging.ascendix.com/wp-content/uploads/2023/06/cover-Listing-Activity-Report.jpg"
+                      loading="lazy"
+                      alt="Ascendix Composer Online Property Flyer 4"
+                      class="library__img"
+                    />
+                    <div class="library__content">
+                      <h3 class="library__subtitle">Property Flyer 4</h3>
+                      <div class="library__type">
+                        <span class="library__name">PDF</span>
+                      </div>
+                    </div>
+                  </div>
+                </button>
+              </article>
+
+              <!-- Fifth Modal (PRINTABLE) -->
+              <div
+                class="modal fade img-scroll"
+                id="modalFive"
+                tabindex="-1"
+                aria-labelledby="fifthTemplate"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <span class="modal-title" id="fifthTemplate"
+                        >Preview Template &quot;Property Flyer 4&quot;</span
+                      >
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <iframe
+                        src="https://ascendix.com/wp-content/uploads/2023/06/Single-Property-Brochure.pdf#toolbar=0&navpanes=0"
+                        width="100%"
+                        height="100%"
+                        frameborder="0"
+                        scrolling="no"
+                        allowfullscreen
+                        title="Sale Listing Activity Report_10_21_21.pdf"
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Fifth Modal End -->
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+              <!-- Sixth Card -->
+              <article class="library__card">
+                <button
+                  type="button"
+                  class="library__btn"
+                  data-toggle="modal"
+                  data-target="#modalSix"
+                >
+                  <div class="library__inner">
+                    <img
+                      src="https://staging.ascendix.com/wp-content/uploads/2023/06/cover-Listing-Activity-Report.jpg"
+                      loading="lazy"
+                      alt="Ascendix Composer Online Property Flyer 5"
+                      class="library__img"
+                    />
+                    <div class="library__content">
+                      <h3 class="library__subtitle">Property Flyer 5</h3>
+                      <div class="library__type">
+                        <span class="library__name">PDF</span>
+                      </div>
+                    </div>
+                  </div>
+                </button>
+              </article>
+
+              <!-- Sixth Modal (PRINTABLE) -->
+              <div
+                class="modal fade img-scroll"
+                id="modalSix"
+                tabindex="-1"
+                aria-labelledby="sixthTemplate"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <span class="modal-title" id="sixthTemplate"
+                        >Preview Template &quot;Property Flyer 5&quot;</span
+                      >
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <iframe
+                        src="https://ascendix.com/wp-content/uploads/2023/06/Property-Flyer-with-Availabilities.pdf#toolbar=0&navpanes=0"
+                        width="100%"
+                        height="100%"
+                        frameborder="0"
+                        scrolling="no"
+                        allowfullscreen
+                        title="Property Listing Report  (OK 3)_10_21_21 (11).pdf"
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Sixth Modal End -->
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+              <!-- Seventh Card -->
+              <article class="library__card">
+                <button
+                  type="button"
+                  class="library__btn"
+                  data-toggle="modal"
+                  data-target="#modalSeven"
+                >
+                  <div class="library__inner">
+                    <img
+                      src="https://staging.ascendix.com/wp-content/uploads/2023/06/cover-Listing-Activity-Report.jpg"
+                      loading="lazy"
+                      alt="Ascendix Composer Online Property Flyer 6"
+                      class="library__img"
+                    />
+                    <div class="library__content">
+                      <h3 class="library__subtitle">Property Flyer 6</h3>
+                      <div class="library__type">
+                        <span class="library__name">PDF</span>
+                      </div>
+                    </div>
+                  </div>
+                </button>
+              </article>
+
+              <!-- Seventh Modal (PRINTABLE) -->
+              <div
+                class="modal fade img-scroll"
+                id="modalSeven"
+                tabindex="-1"
+                aria-labelledby="seventhTemplate"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <span class="modal-title" id="seventhTemplate"
+                        >Preview Template &quot;Property Flyer 6&quot;</span
+                      >
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <iframe
+                        src="https://ascendix.com/wp-content/uploads/2023/06/Property-Summary-report.pdf#toolbar=0&navpanes=0"
+                        width="100%"
+                        height="100%"
+                        frameborder="0"
+                        scrolling="no"
+                        allowfullscreen
+                        title="Property Listing Report  (OK 3)_10_21_21 (11).pdf"
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Seventh Modal End -->
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+              <!-- Eigth Card -->
+              <article class="library__card">
+                <button
+                  type="button"
+                  class="library__btn"
+                  data-toggle="modal"
+                  data-target="#modalEigth"
+                >
+                  <div class="library__inner">
+                    <img
+                      src="https://staging.ascendix.com/wp-content/uploads/2023/06/cover-Listing-Activity-Report.jpg"
+                      loading="lazy"
+                      alt="Ascendix Composer Online Property Flyer 7"
+                      class="library__img"
+                    />
+                    <div class="library__content">
+                      <h3 class="library__subtitle">Property Flyer 7</h3>
+                      <div class="library__type">
+                        <span class="library__name">PDF</span>
+                      </div>
+                    </div>
+                  </div>
+                </button>
+              </article>
+
+              <!-- Eigth Modal (PRINTABLE) -->
+              <div
+                class="modal fade img-scroll"
+                id="modalEigth"
+                tabindex="-1"
+                aria-labelledby="eigthTemplate"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <span class="modal-title" id="eigthTemplate"
+                        >Preview Template &quot;Property Flyer 7&quot;</span
+                      >
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <iframe
+                        src="https://ascendix.com/wp-content/uploads/2023/06/Single-Property-Email.pdf#toolbar=0&navpanes=0"
+                        width="100%"
+                        height="100%"
+                        frameborder="0"
+                        scrolling="no"
+                        allowfullscreen
+                        title="Property Listing Report  (OK 3)_10_21_21 (11).pdf"
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Eigth Modal End -->
+            </div>
+          </div>
+
+          <!-- Third row -->
+          <div class="row library-hide-row" id="hide-cards-second-row">
+            <!-- SOON Cards -->
+            <div class="col-lg-3 col-sm-6">
+              <!-- Nineth Card -->
+              <article class="library__card library__card--soon">
+                <button
+                  type="button"
+                  class="library__btn"
+                  data-toggle="modal"
+                  data-target="#modalNine"
+                >
+                  <div class="library__inner">
+                    <img
+                      src="https://staging.ascendix.com/wp-content/uploads/2023/06/cover-Listing-Activity-Report.jpg"
+                      loading="lazy"
+                      alt="Offering memorandum"
+                      class="library__img"
+                    />
+                    <div class="library__content">
+                      <h3 class="library__subtitle">Offering memorandum</h3>
+                      <div class="library__type">
+                        <span class="library__name">PDF</span>
+                      </div>
+                    </div>
+                    <span class="library__span">Coming Soon</span>
+                  </div>
+                </button>
+              </article>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+              <!-- Tenth Card -->
+              <article class="library__card library__card--soon">
+                <button
+                  type="button"
+                  class="library__btn"
+                  data-toggle="modal"
+                  data-target="#modalTen"
+                >
+                  <div class="library__inner">
+                    <img
+                      src="https://staging.ascendix.com/wp-content/uploads/2023/06/cover-Listing-Activity-Report.jpg"
+                      loading="lazy"
+                      alt="Land property activity report"
+                      class="library__img"
+                    />
+                    <div class="library__content">
+                      <h3 class="library__subtitle">
+                        Land property activity report
+                      </h3>
+                      <div class="library__type">
+                        <span class="library__name">PDF</span>
+                      </div>
+                    </div>
+                    <span class="library__span">Coming Soon</span>
+                  </div>
+                </button>
+              </article>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+              <!-- Eleven Card -->
+              <article class="library__card library__card--soon">
+                <button
+                  type="button"
+                  class="library__btn"
+                  data-toggle="modal"
+                  data-target="#modalEleven"
+                >
+                  <div class="library__inner">
+                    <img
+                      src="https://staging.ascendix.com/wp-content/uploads/2023/06/cover-Listing-Activity-Report.jpg"
+                      loading="lazy"
+                      alt="Property listing report"
+                      class="library__img"
+                    />
+                    <div class="library__content">
+                      <h3 class="library__subtitle">Property listing report</h3>
+                      <div class="library__type">
+                        <span class="library__name">PDF</span>
+                      </div>
+                    </div>
+                    <span class="library__span">Coming Soon</span>
+                  </div>
+                </button>
+              </article>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+              <!-- Twelveth Card -->
+              <article class="library__card library__card--soon">
+                <button
+                  type="button"
+                  class="library__btn"
+                  data-toggle="modal"
+                  data-target="#modalTwelve"
+                >
+                  <div class="library__inner">
+                    <img
+                      src="https://staging.ascendix.com/wp-content/uploads/2023/06/cover-Listing-Activity-Report.jpg"
+                      loading="lazy"
+                      alt="Property summary report"
+                      class="library__img"
+                    />
+                    <div class="library__content">
+                      <h3 class="library__subtitle">Property summary report</h3>
+                      <div class="library__type">
+                        <span> </span>
+                        <span class="library__name">PDF</span>
+                      </div>
+                    </div>
+                    <span class="library__span">Coming Soon</span>
+                  </div>
+                </button>
+              </article>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <button
+                class="btn btn-primary library__collapse-btn collapse-btn"
+              >
+                Load More
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
